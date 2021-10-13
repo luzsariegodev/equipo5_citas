@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+
+    <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="400px" height="300px">
+
+        
+    <form class="form-login" 
+        name="formRegistro"
+        method="get"
+        name="formRegistro"
+        onSubmit="validar_formulario();">
+        <table>
+            <tr>
+                <td class="login"><div><p> <a href="/">Iniciar Sesión</a> </p></div></td>
+                <td class="register"><div><p> <a href="/registro">Registrate</a> </p></div></td>
+            </tr>
+        </table>
+                    
+            <input class="controls" type="text" name="usuario" value="" placeholder="Usuario o Correo">
+            <input class="controls" type="password" name="contraseña" value="" placeholder="**********" >
+            <input type="checkbox" name="condiciones">Recordarme
+            <button class="controls" type="submit" name="ingresar" value="ingresar">Ingresar</button>
+            
+            <p><a href="">¿Olvidaste tu contraseña?</a></p>
+    </form>
+    
+
+</body>
+</html>
