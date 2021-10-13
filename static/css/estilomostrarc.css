@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    background: #ffffff;
+}
+
+
+.titulo1 {
+    text-align:center ;
+    background-color:#0367a6;
+    color: #ffffff;
+    height: 50px;
+    margin: 5px;
+    
+    
+}
+.titulo2 {
+    border:black;
+    text-align:center ;
+    background-color: #79f2f2;
+    color: dimgrey;
+    height: 50px;
+    margin: 5px
+    
+}
+
+.contenedor-menu{
+    width: 25%;
+    height: 520px;
+    text-align: center;
+    background-color:#0367a6;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50;
+
+}
+.contenedor-menu .menu{
+    width: 100%;
+}
+
+
+.contenedor-menu .menu li a{
+    color: #ffffff;
+    display: block;
+    padding: 15px 20px;
+    background-color: #0367a6;
+    list-style: none;
+    text-decoration: none;
+}
+
+.contenedor-menu .menu li a:hover{
+    color: #0367a6;
+    background-color: #ffffff;
+}
+
+.contenedor-menu .menu ul li {
+   /*display: none;*/
+}
+
+.contenedor-menu .menu ul li a {
+    background-color: #f0f0f2;
+    color: black;
+}
+
+.contenedor-menu .menu .activado > a{
+    background:#0367a6;
+    color: #79f2f2;
+
+}
+
+.mostrardatos{
+    margin-left: 26%;
+    margin-right: 4%;
+    padding: 100px;
+    border-radius:5px;
+    background: #f0f0f2;
+    
+}
+.titulodetalle{
+    text-align: center;
+    color: #0367a6;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #0367a6;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #79f2f2;
+ }
+
+ td{
+     text-align: center;
+     
+ }
+ thead{
+     color: #0367a6;
+     font-weight: bold;
+ }
+
+ button{
+     width: 25%;
+     height: 50px;
+     background: #0367a6;
+     color: #79f2f2;
+     text-align: center;
+     font-weight: bold;
+     font-size: 20; 
+     border-radius: 10px; 
+ }
+
+.piedepagina {
+    text-align:center ;
+    background-color: #79f2f2;
+    color: dimgrey;
+    height: 50px;
+    margin: 5px;
+    outline: #ffffff;
+}
+

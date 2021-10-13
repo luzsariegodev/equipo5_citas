@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    background: #ffffff;
+}
+
+
+.titulo1 {
+    text-align:center ;
+    background-color:#0367a6;
+    color: #ffffff;
+    height: 50px;
+    margin: 5px;
+    
+    
+}
+.titulo2 {
+    border:black;
+    text-align:center ;
+    background-color: #79f2f2;
+    color: dimgrey;
+    height: 50px;
+    margin: 5px
+    
+}
+
+.contenedor-menu{
+    width: 25%;
+    height: 520px;
+    text-align: center;
+    background-color:#0367a6;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50;
+
+}
+.contenedor-menu .menu{
+    width: 100%;
+}
+
+
+.contenedor-menu .menu li a{
+    color: #ffffff;
+    display: block;
+    padding: 15px 20px;
+    background-color: #0367a6;
+    list-style: none;
+    text-decoration: none;
+}
+
+.contenedor-menu .menu li a:hover{
+    color: #0367a6;
+    background-color: #ffffff;
+}
+
+.contenedor-menu .menu ul li {
+   /*display: none;*/
+}
+
+.contenedor-menu .menu ul li a {
+    background-color: #f0f0f2;
+    color: black;
+}
+
+.contenedor-menu .menu .activado > a{
+    background:#0367a6;
+    color: #79f2f2;
+
+}
+
+
+.buscarporfecha{
+    width: 25%;
+    height: 520px;
+    text-align: center;
+    background-color: white;
+}
+
+.buscarporfecha h3 {
+    background-color: #0367a6;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    border: black;
+    border-radius: 5px;
+
+}
+
+.buscarpormedico{
+    width: 25%;
+    height: 520px;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.buscarpormedico h3 {
+    background-color: #0367a6;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    border: black;
+    border-radius: 5px;
+
+}
+
+.buscarporcedula{
+    width: 25%;
+    height: 520px;
+    text-align: center;
+    background-color: white;
+}
+
+.buscarporcedula h3 {
+    background-color: #0367a6;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    border: black;
+    border-radius: 5px;
+
+}
+
+.piedepagina {
+    text-align:center ;
+    background-color: #79f2f2;
+    color: dimgrey;
+    height: 50px;
+    margin: 5px;
+    outline: #ffffff;
+}
+
+
+
