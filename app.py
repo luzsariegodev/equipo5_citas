@@ -22,5 +22,13 @@ def buscarcita():
 def mostrarcita():
     return render_template("mostrarcita.html")
 
+@app.route('/citas')
+def listarcitas():
+    return render_template("listarcitas.html")
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template("dashboard.html")
+
 
 

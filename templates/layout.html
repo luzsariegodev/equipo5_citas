@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilomostrarc.css') }}">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.6">
+  <style type="text/css">
+  </style>
+</head>
+<body>
+  <h1 class="titulo1">Fundación Cardioinfantil</h1>
+  <h1 class="titulo2">Sistema de gestión de pacientes</h1>
+  <div class="contenedor-menu" style="float: left;">
+    <ul class="menu">
+      <li><a href="/">Inicio</a></li>
+      <li class="activado"><a href="##">Citas</a></li>
+      <ul>
+        <li><a href="{{ url_for('listarcitas') }}">Listado de citas</a></li>
+        <li><a href="{{ url_for('buscarcita') }}">Buscar citas</a></li>
+      </ul>
+      <li class="activado"><a href="##">Perfil</a></li>
+      <ul>
+        <li><a href="#">Editar perfil</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="mostrardatos">
+    {% block content %}
+   
+    {% endblock %}
+  </div>
+  <div style="clear:both"></div>
+
+  
+  
+
+
+  <div class="piedepagina">
+    <h5>Sistema de gestión de pacientes</h5>
+    <h5>Equipo 5 grupo 29</h5>
+    </div>
+    {% block scripts %}
+
+    {% endblock %}
+</body>
+</html>

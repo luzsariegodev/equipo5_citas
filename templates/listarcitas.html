@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 class="titulodetalle">Listado de citas</h1>
+<table >
+  <thead>
+    <tr>
+      <td>Fecha y hora</td>
+      <td>Paciente</td>
+      <td>Médico</td>
+      <td>Consultorio</td>
+      <td>Acciones</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2021-10-05 08:15 a.m.</td>
+      <td>Pepito Perez</td>
+      <td>Dr. Lopera</td>
+      <td>Consultorio 1</td>
+      <td><a href="{{ url_for('mostrarcita') }}">[Detalle]</a></td>
+    </tr>
+    <tr>
+      <td>2021-10-07 10:15 a.m.</td>
+      <td>Justo Calle</td>
+      <td>Dr. House</td>
+      <td>Consultorio 3</td>
+      <td><a href="{{ url_for('mostrarcita') }}">[Detalle]</a></td>
+    </tr>
+    <tr>
+      <td>2021-10-09 03:15 p.m.</td>
+      <td>Encarnación Restrepo</td>
+      <td>Dr. Pancreacio</td>
+      <td>Consultorio 75</td>
+      <td><a href="{{ url_for('mostrarcita') }}">[Detalle]</a></td>
+    </tr>
+  </tbody>
+    
+</table>
+
+
+    <br>
+    <br>
+    <button onclick="location.href='/buscarcita'">Regresar</button>
+
+
+{% endblock %}

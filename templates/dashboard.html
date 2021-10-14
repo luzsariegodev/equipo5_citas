@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 class="titulodetalle">Dashboard</h1>
+<canvas id="citasmedicas" width="400" height="400"></canvas>
+
+
+{% endblock %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}
