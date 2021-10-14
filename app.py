@@ -23,4 +23,14 @@ def mostrarcita():
     return render_template("mostrarcita.html")
 
 
+@app.route('/perfil')
+def verperfil():
+    return render_template("perfil.html")
+
+@app.route('/editarperfil')
+def editarperfil():
+    return render_template("editar_perfil.html")
+
+
+
 
