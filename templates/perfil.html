@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/perfil.css') }}">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Perfil</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.6">
+  <script src="https://kit.fontawesome.com/389fcd5566.js" crossorigin="anonymous"></script>
+  <script scr="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+
+  <style type="text/css">
+  </style>
+</head>
+<body>
+  <h1 class="titulo1">Fundación Cardioinfantil</h1>
+  <h1 class="titulo2">Sistema de gestión de pacientes</h1>
+  <div class="contenedor-menu" style="float: left;">
+    <ul class="menu">
+      <li><a href="/">Inicio</a></li>
+      <li class="activado"><a href="##">Citas</a></li>
+      <ul>
+        <li><a href="/mostrarcita">Listado de citas</a></li>
+        <li><a href="/buscarcita">Buscar citas</a></li>||
+      </ul>
+      <li class="activado"><a href="\perfil">Perfil</a></li>
+      <ul>
+        <li><a href="\editarperfil">Editar perfil</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div>
+    <div class="datos" style="float: centre;">
+      <br>
+      <br>
+      <h3>Nombre</h3>
+      <p> José Celestino Mutis</p>
+      <br>
+      <h3>Identificación</h3>
+      <p> CC 10236547</p>
+      <br>
+      <h3>Tipo de Usuario</h3>
+      <p> Médico</p>
+      <br>
+      <h3>Correo Electrónico</h3>
+      <br>
+      <p> josecmutis@gmail.com</p>
+      <br>
+      <h3>Teléfono</h3>
+      <p> +57 3101245789</p>
+      <br>
+      <br>
+    </div>
+    <div class="foto" style="float: right;">
+      <br>
+      <h3>Foto de Perfil</h3> 
+      <br>
+      <img class="logo" src="{{ url_for('static', filename='images/fotoperfil.png') }}" alt="logo" width="300px" height="300px">
+      <br>
+      <br>
+    </div>
+  </div>
+  
+  <div style="clear:both"></div>
+  
+
+  <div class="piedepagina">
+  <h5>Sistema de gestión de pacientes</h5>
+  <h5>Equipo 5 grupo 29</h5>
+  </div>
+
+</body>
+</html>
