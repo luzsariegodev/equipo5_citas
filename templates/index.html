@@ -15,18 +15,33 @@
         
     <form class="form-login" 
         name="formRegistro"
-        method="get"
+        method="POST"
         name="formRegistro"
-        onSubmit="validar_formulario();">
+        action="{{ url_for('index')  }}">
         <table>
             <tr>
                 <td class="login"><div><p> <a href="/">Iniciar Sesión</a> </p></div></td>
                 <td class="register"><div><p> <a href="/registro">Registrate</a> </p></div></td>
             </tr>
         </table>
-                    
-            <input class="controls" type="text" name="usuario" value="" placeholder="Usuario o Correo">
-            <input class="controls" type="password" name="contraseña" value="" placeholder="**********" >
+        {{form.csrf_token }}
+        <div class="form-group"> 
+            {{form.username(class_="controls", placeholder="Usuario o Correo")}} 
+        </div>
+        <ul>
+            {%for error in form.username.errors %}
+                <li style="color:red"> {{error}} </li>
+            {%endfor %}
+            </ul>
+        <div class="form-group"> 
+            {{form.password(class_="controls", placeholder="**********")}} 
+        </div> 
+        <ul>
+            {%for error in form.password.errors %}
+                <li style="color:red"> {{error}} </li>
+            {%endfor %}
+        </ul>
+
             <input type="checkbox" name="condiciones">Recordarme
             <button class="controls" type="submit" name="ingresar" value="ingresar">Ingresar</button>
             

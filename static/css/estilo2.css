@@ -9,7 +9,7 @@ body {
     background: #13c9f2;
 }
 
-.form-login {
+.form-login, .form-registro {
     float: right;
     width: 400px;
     height: 500px;
@@ -21,6 +21,11 @@ body {
     padding: 20px 30px;
     border-top: 4px solid #000000;
     color: black;
+}
+
+.form-registro {
+    margin-top: 20px;
+    height: 600px;
 }
 
 .login {
@@ -49,7 +54,7 @@ body {
     font-size: 30px;
 }
 
-.form-login h5 {
+.form-login h5, .form-registro h5 {
     margin: 0;
     text-align: center;
     height: 40px;
@@ -77,19 +82,19 @@ body {
     margin-bottom: 16px;
 }
 
-.form-login p {
+.form-login p, .form-registro p {
     height: 40px;
     text-align: center;
     border-bottom: 1px solid;
 }
 
-.form-login a {
+.form-login a, .form-registro a {
     color: white;
     text-decoration: none;
     font-size: 14px;
 }
 
-.form-login a:hover {
+.form-login a:hover, .form-registro a:hover {
     text-decoration: underline;
 }
 
